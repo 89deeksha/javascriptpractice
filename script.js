@@ -91,4 +91,23 @@ function student(cls,age,name,surname){
 var student1=new student(12,22,"Deeksha","Jain")
 var student2=new student(22,20,"Priya","sharma")
 console.log(student1,student2)
+student.prototype.nationality="Indian"
+console.log(student2,student1)
+//nested objects
+var userinfo={
+	id:123,
+	email:"deeksha@123gmail.com",
+	personalinfo:{
+		name:"Deeksha",
+		add:"22/4G Agra",
+		mob:{
+			no:9921345788
+		}
+	}
+}
+//how to access it
+console.log(userinfo) //this will show full object
+console.log(userinfo.personalinfo) //this will show personalinfo object
+console.log(userinfo.personalinfo.mob) //this will show mobile number
+
 
